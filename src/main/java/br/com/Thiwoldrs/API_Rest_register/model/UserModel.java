@@ -1,19 +1,30 @@
 package br.com.Thiwoldrs.API_Rest_register.model;
 
 import jakarta.persistence.*;
+import org.springframework.lang.Nullable;
 
 @Entity
-@Table(name = "users")
+@Table(name = "users", uniqueConstraints = { @UniqueConstraint(columnNames = {"email", "cpf"})})
 public class UserModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+
+    @Column(name = "nome")
     private String nome;
+
+    @Column(name = "email")
     private String email;
+
+    @Column(name = "idade")
     private Byte idade;
+
+    @Column(name = "cpf")
     private String cpf;
 
+    @Column(name = "brasileiro")
+    private boolean brasileiro;
 
 
     public Long getId() {
@@ -60,7 +71,7 @@ public class UserModel {
         this.brasileiro = brasileiro;
     }
 
-    private boolean brasileiro;
+
 
 
 
