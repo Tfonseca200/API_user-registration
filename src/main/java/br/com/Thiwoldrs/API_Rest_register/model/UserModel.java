@@ -3,13 +3,15 @@ package br.com.Thiwoldrs.API_Rest_register.model;
 import jakarta.persistence.*;
 import org.springframework.lang.Nullable;
 
+import java.util.UUID;
+
 @Entity
 @Table(name = "users")
 public class UserModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private UUID id;
 
     @Column(name = "nome")
     private String nome;
@@ -23,11 +25,11 @@ public class UserModel {
     @Column(name = "cpf" , unique = true)
     private String cpf;
 
-    @Column(name = "brasileiro")
-    private boolean brasileiro;
+    @Column(name = "brasileiro_nativo")
+    private boolean brasileiro_nativo;
 
 
-    public Long getId() {
+    public UUID getId() {
         return id;
     }
 
@@ -64,11 +66,11 @@ public class UserModel {
     }
 
     public boolean isBrasileiro() {
-        return brasileiro;
+        return brasileiro_nativo;
     }
 
     public void setBrasileiro(boolean brasileiro) {
-        this.brasileiro = brasileiro;
+        this.brasileiro_nativo = brasileiro;
     }
 
 
