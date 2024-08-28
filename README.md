@@ -1,4 +1,4 @@
-# Gerenciamento de Usuários
+# User registration
 
 ## Sobre o Projeto
 
@@ -12,8 +12,9 @@ A aplicação fornece uma API RESTful para as seguintes funcionalidades:
 - **Update User**: Atualiza as informações de um usuário existente.
 - **Delete User**: Remove um usuário do sistema.
 
+<br>
 
-## Tecnologias Utilizadas
+## Tecnologias Utilizadas🌐
 
 ### Back-end
 
@@ -28,6 +29,7 @@ A aplicação fornece uma API RESTful para as seguintes funcionalidades:
 - **MySQL**
 - **Docker Compose**
 
+<br>
 
 ## Como Executar a API
 
@@ -46,9 +48,9 @@ cd <NOME_DO_REPOSITORIO>
 
 Certifique-se de que o Docker e o Docker Compose estão instalados na sua máquina. Se ainda não estiverem instalados, você pode baixá-los e instalá-los a partir dos seguintes links:
 
-- !(Docker)[https://www.docker.com/products/docker-desktop/]
+- (https://www.docker.com/products/docker-desktop/)[Docker]
 
-- !(Docker-compose)[https://docs.docker.com/compose/install/]
+- (https://docs.docker.com/compose/install/)[Docker-compose]
 
 Depois de instalar o Docker e o Docker Compose, execute o Docker Compose para iniciar o contêiner MySQL:
 
@@ -69,6 +71,8 @@ mvn spring-boot:run
 ### 4. Acesse a API
 
    Após iniciar a aplicação, a API estará disponível em http://localhost:8080. Você pode utilizar ferramentas como Postman ou cURL para interagir com os endpoints da API.
+
+<br>
 
 # Autor
 
