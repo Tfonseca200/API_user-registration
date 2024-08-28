@@ -1,4 +1,6 @@
-# User registration
+# API User registration
+
+<br>
 
 ## Sobre o Projeto
 
