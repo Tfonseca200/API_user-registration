@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import org.springframework.lang.Nullable;
 
 @Entity
-@Table(name = "users", uniqueConstraints = { @UniqueConstraint(columnNames = {"email", "cpf"})})
+@Table(name = "users")
 public class UserModel {
 
     @Id
@@ -14,13 +14,13 @@ public class UserModel {
     @Column(name = "nome")
     private String nome;
 
-    @Column(name = "email")
+    @Column(name = "email", unique = true)
     private String email;
 
     @Column(name = "idade")
     private Byte idade;
 
-    @Column(name = "cpf")
+    @Column(name = "cpf" , unique = true)
     private String cpf;
 
     @Column(name = "brasileiro")

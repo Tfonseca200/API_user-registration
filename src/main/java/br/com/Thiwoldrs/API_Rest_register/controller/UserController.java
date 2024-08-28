@@ -22,7 +22,7 @@ public class UserController {
 
     @PostMapping("/users")
     public ResponseEntity<UserModel> create (@RequestBody @Valid UserRecordDto userRecordDto){
-        UserModel userModel = new UserModel();
+        var userModel = new UserModel();
         BeanUtils.copyProperties(userRecordDto, userModel);
         return ResponseEntity.status(HttpStatus.OK).body(userRepository.save(userModel));
 
