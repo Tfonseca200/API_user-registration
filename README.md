@@ -2,7 +2,7 @@
  API User registration
 </h1>
 
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/Tfonseca200/API_user-registration/blob/main/LICENSE) 
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/Tfonseca200/API_user-registration/blob/main/LISENSE) 
 
 <br>
 
