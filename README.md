@@ -1,4 +1,6 @@
-# API User registration
+<h1 align="center">
+ API User registration
+</h1>
 
 <br>
 
