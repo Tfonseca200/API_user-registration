@@ -52,9 +52,9 @@ cd <NOME_DO_REPOSITORIO>
 
 Certifique-se de que o Docker e o Docker Compose estão instalados na sua máquina. Se ainda não estiverem instalados, você pode baixá-los e instalá-los a partir dos seguintes links:
 
-- (https://www.docker.com/products/docker-desktop/)[Docker]
+- [Docker](https://www.docker.com/products/docker-desktop/)
 
-- (https://docs.docker.com/compose/install/)[Docker-compose]
+- [Docker-compose](https://docs.docker.com/compose/install/)
 
 Depois de instalar o Docker e o Docker Compose, execute o Docker Compose para iniciar o contêiner MySQL:
 
