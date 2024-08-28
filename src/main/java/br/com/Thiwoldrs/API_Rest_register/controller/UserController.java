@@ -2,17 +2,13 @@ package br.com.Thiwoldrs.API_Rest_register.controller;
 
 import br.com.Thiwoldrs.API_Rest_register.model.UserModel;
 import br.com.Thiwoldrs.API_Rest_register.recordDtos.UserRecordDto;
-import br.com.Thiwoldrs.API_Rest_register.repository.UserRepository;
 import br.com.Thiwoldrs.API_Rest_register.service.UserService;
 import jakarta.validation.Valid;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
-import java.util.Objects;
 import java.util.Optional;
 import java.util.UUID;
 

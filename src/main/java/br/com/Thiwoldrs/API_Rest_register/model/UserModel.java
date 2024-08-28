@@ -1,7 +1,6 @@
 package br.com.Thiwoldrs.API_Rest_register.model;
 
 import jakarta.persistence.*;
-import org.springframework.lang.Nullable;
 
 import java.util.UUID;
 
@@ -24,6 +23,7 @@ public class UserModel {
 
     @Column(name = "cpf" , unique = true)
     private String cpf;
+
 
     @Column(name = "brasileiro_nativo")
     private boolean brasileiro_nativo;
@@ -65,12 +65,12 @@ public class UserModel {
         this.cpf = cpf;
     }
 
-    public boolean isBrasileiro() {
+    public boolean isBrasileiro_nativo() {
         return brasileiro_nativo;
     }
 
-    public void setBrasileiro(boolean brasileiro) {
-        this.brasileiro_nativo = brasileiro;
+    public void setBrasileiro_nativo(boolean brasileiro_nativo) {
+        this.brasileiro_nativo = brasileiro_nativo;
     }
 
 
